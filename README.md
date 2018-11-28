@@ -1,6 +1,6 @@
 # kboard
 
-> A Vue.js project
+> A Foreground Framework of kboard
 
 ## Build Setup
 
