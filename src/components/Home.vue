@@ -52,8 +52,8 @@
 <template>
   <div class="layout">
     <Layout>
-      <Side ref="side1" hide-trigger collapsible :collapsed-width="78" v-model="isCollapsed">
-      </Side>
+      <Sider ref="side1" hide-trigger collapsible :collapsed-width="78" v-model="isCollapsed">
+      </Sider>
       <Layout>
         <Header :style="{padding: 0}" class="layout-header-bar">
           <Icon @click.native="collapsedSider" :class="rotateIcon" :style="{margin: '0 20px'}" type="md-menu" size="24"></Icon>
