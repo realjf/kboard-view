@@ -42,7 +42,7 @@
         </Submenu>
         <Submenu name="4">
             <template slot="title">
-                <Icon type="ios-people" size="20" />
+                <Icon type="ios-cloud-done" size="20" />
                 云存储
             </template>
             <menuGroup title="数据库">

@@ -52,10 +52,5 @@
 </script>
 
 <style scoped>
-  .Form {
-     text-align: center;
-  }
-  .Form .FormItem {
-      display: block;
-  }
+
 </style>

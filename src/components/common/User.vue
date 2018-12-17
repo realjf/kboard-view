@@ -7,7 +7,7 @@
             </a>
             <DropdownMenu slot="list">
                 <DropdownItem>设置</DropdownItem>
-                <DropdownItem>退出</DropdownItem>
+                <DropdownItem><routerLink to="/logout">退出</routerLink></DropdownItem>
             </DropdownMenu>
         </Dropdown>
     </div>
