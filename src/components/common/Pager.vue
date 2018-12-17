@@ -9,5 +9,7 @@
 </script>
 
 <style scoped>
-
+  .ivu-page {
+    margin-top: 20px;
+  }
 </style>

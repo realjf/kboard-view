@@ -5,6 +5,15 @@
 ## Build Setup
 
 ``` bash
+# install vue
+npm install vue --save
+
+# install iview
+npm install iview --save
+
+# install vue-router
+npm install vue-router --save
+
 # install dependencies
 npm install
 

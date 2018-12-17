@@ -2,13 +2,13 @@
   <Form ref="formInline" :model="formInline" :rules="ruleInline" inline>
     <FormItem prop="user">
       <div>
-        <Input type="text" v-model="formInline.user" placeholder="邮箱">
+        <Input type="text" v-model="formInline.user" placeholder="邮箱" style="width: 300px;">
           <Icon type="ios-person-outline" slot="prepend"></Icon>
         </Input>
       </div>
     </FormItem>
     <FormItem prop="password">
-      <Input type="password" v-model="formInline.password" placeholder="密码">
+      <Input type="password" v-model="formInline.password" placeholder="密码" style="width: 300px;">
         <Icon type="ios-lock-outline" slot="prepend"></Icon>
       </Input>
     </FormItem>
@@ -52,6 +52,10 @@
 </script>
 
 <style scoped>
-
+  .Form {
+     text-align: center;
+  }
+  .Form .FormItem {
+      display: block;
+  }
 </style>
-
