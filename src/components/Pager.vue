@@ -1,5 +1,5 @@
 <template>
-  <Page :total="100" show-total />
+  <Page :total="100" show-total show-sizer />
 </template>
 
 <script>
