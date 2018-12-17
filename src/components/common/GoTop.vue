@@ -1,5 +1,5 @@
 <template>
-  <BackTop :height="100" :bottom="200">
+  <BackTop :height="100" :bottom="100">
     <div class="top">返回顶端</div>
   </BackTop>
 </template>

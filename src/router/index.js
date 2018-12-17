@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
-import Login from '@/components/Login'
+import Log from '@/components/logs/Log'
 
 Vue.use(Router);
 
@@ -12,10 +12,10 @@ export default new Router({
       name: 'Home',
       component: Home
     },{
-      path: '/login',
-      name: 'Login',
-      component: Login
-    },{
+      path: '/log',
+      name: 'Log',
+      component: Log
+      },{
       path: '*',
       redirect: '/login',
     }

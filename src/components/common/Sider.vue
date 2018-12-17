@@ -4,7 +4,7 @@
         <Menu>
           <MenuItem name="0">
             <Icon type="ios-home" size="20"/>
-            <routerLink to="/">首页</routerLink>
+            <MenuItem  name="0-1" to="/">首页</MenuItem>
           </MenuItem>
           <Submenu name="1">
             <template slot="title">
@@ -31,7 +31,7 @@
               日志监控
             </template>
             <MenuGroup title="日志">
-              <MenuItem name="3-1">错误日志</MenuItem>
+              <MenuItem name="3-1" to="/log">错误日志</MenuItem>
               <MenuItem name="3-2">kibana日志</MenuItem>
             </MenuGroup>
             <MenuGroup title="监控">
@@ -99,7 +99,5 @@
 </script>
 
 <style scoped>
-  .ivu-row {
-    /*border-top: 2px solid #2d8cf0;*/
-  }
+
 </style>
