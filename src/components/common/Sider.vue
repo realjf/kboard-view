@@ -1,8 +1,7 @@
 <template>
     <Row>
-      <Button @click="value2 = true" type="primary">Open</Button>
-      <Drawer title="产品与服务" placement="left" :closable="false" v-model="value2">
-        <Col span="1">
+      <Button @click="showProduct = true" icon="ios-power" type="default" :style="{width: '240px', lineHeight: '40px', marginTop: '5px', borderBottom: '2px solid #2d8cf0'}">产品与服务</Button>
+      <Drawer title="产品与服务" placement="left" :closable="false" v-model="showProduct" :style="{ marginTop: '120px'}">
           <Menu>
             <Submenu name="1">
               <template slot="title">
@@ -67,28 +66,27 @@
               <MenuItem name="6-2">ingress控制器</MenuItem>
             </Submenu>
           </Menu>
-          <Menu :theme="theme2">
-            <Submenu name="2">
-              <template slot="title">
-                <Icon type="ios-pulse" />
-                工作负载
-              </template>
-              <MenuItem name="1-1">应用</MenuItem>
-              <MenuItem name="1-2">服务</MenuItem>
-              <MenuItem name="1-3">共享</MenuItem>
-            </Submenu>
-            <Submenu name="2">
-              <template slot="title">
-                <Icon type="ios-filing" />
-                存储与配置
-              </template>
-              <MenuItem name="2-1">持久存储卷</MenuItem>
-              <MenuItem name="2-2">密钥</MenuItem>
-              <MenuItem name="2-3">应用配置</MenuItem>
-            </Submenu>
-          </Menu>
-        </Col>
       </Drawer>
+      <Menu :theme="theme2">
+        <Submenu name="2">
+          <template slot="title">
+            <Icon type="ios-pulse" />
+            工作负载
+          </template>
+          <MenuItem name="1-1">应用</MenuItem>
+          <MenuItem name="1-2">服务</MenuItem>
+          <MenuItem name="1-3">共享</MenuItem>
+        </Submenu>
+        <Submenu name="2">
+          <template slot="title">
+            <Icon type="ios-filing" />
+            存储与配置
+          </template>
+          <MenuItem name="2-1">持久存储卷</MenuItem>
+          <MenuItem name="2-2">密钥</MenuItem>
+          <MenuItem name="2-3">应用配置</MenuItem>
+        </Submenu>
+      </Menu>
     </Row>
 </template>
 
@@ -99,7 +97,7 @@
         data () {
           return {
               theme2: 'light',
-              value2: false
+              showProduct: false
           }
         }
     }
