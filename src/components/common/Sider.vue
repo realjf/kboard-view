@@ -1,7 +1,7 @@
 <template>
     <Row>
       <Button @click="showProduct = true" icon="ios-power" type="default" :style="{width: '240px', lineHeight: '40px', marginTop: '5px', borderBottom: '2px solid #2d8cf0'}">产品与服务</Button>
-      <Drawer title="产品与服务" placement="left" :closable="false" v-model="showProduct" :style="{ marginTop: '120px'}">
+      <Drawer title="产品与服务" placement="left" :closable="false" v-model="showProduct">
           <Menu>
             <Submenu name="1">
               <template slot="title">
