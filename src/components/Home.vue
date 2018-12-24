@@ -13,10 +13,19 @@
     name: "Home",
     data () {
       return {
-        name: "nihao",
       }
     },
     methods: {
+      initName: function() {
+        let name = "";
+        Vue.$api.api_user.user().then(resp =>{
+          console.log(resp.result.name);
+          name = resp.result.name;
+        }).catch(()=>{
+          console.log()
+        });
+        return name;
+      }
     },
     components: {CommonLayout},
   }

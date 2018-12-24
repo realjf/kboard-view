@@ -1,7 +1,7 @@
 <template>
     <Row>
-      <Button @click="showProduct = true" icon="ios-power" type="default" :style="{width: '240px', lineHeight: '40px', marginTop: '5px', borderBottom: '2px solid #2d8cf0'}">产品与服务</Button>
-      <Drawer title="产品与服务" placement="left" :closable="false" v-model="showProduct">
+      <Button @mouseenter.native="showProduct()" icon="ios-power" type="default" :style="{left: '0', width: '40px', lineHeight: '40px', height: '100%', marginTop: '5px', borderBottom: '2px solid #2d8cf0'}">产品与服务</Button>
+      <Drawer title="产品与服务" placement="left" :closable="false" v-model="showPro">
           <Menu>
             <Submenu name="1">
               <template slot="title">
@@ -97,12 +97,20 @@
         data () {
           return {
               theme2: 'light',
-              showProduct: false
+              showPro: false
           }
+        },
+        methods: {
+            showProduct: function () {
+                this.showPro = !this.showPro
+            }
         }
     }
 </script>
 
 <style scoped>
-
+  div.ivu-drawer.ivu-drawer-left {
+    left: 60px;
+    top: 60px;
+  }
 </style>

@@ -38,7 +38,6 @@
                     <Crumb></Crumb>
                     <Content :style="{padding: '24px', minHeight: '760px', background: '#fff'}">
                     </Content>
-                    <Pager></Pager>
                 </Layout>
             </Layout>
         </Layout>

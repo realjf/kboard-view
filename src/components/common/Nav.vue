@@ -11,11 +11,9 @@
         <Submenu name="1">
             <template slot="title">
                 <Icon type="ios-nuclear" size="20"/>
-                镜像仓库
+                工单
             </template>
-            <MenuItem name="1-1">公共镜像</MenuItem>
-            <MenuItem name="1-2">团队镜像</MenuItem>
-            <MenuItem name="1-3">私有镜像</MenuItem>
+            <MenuItem name="1-1">我的工单</MenuItem>
         </Submenu>
         <Submenu name="2">
             <template slot="title">
