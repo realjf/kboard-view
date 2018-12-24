@@ -57,5 +57,9 @@
     export default {
         name: "CommonLayout",
         components: {GoTop, Nav, Pager, Crumb, Sider},
+        data () {
+          return {
+          }
+        },
     }
 </script>

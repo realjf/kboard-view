@@ -11,6 +11,13 @@
   import CommonLayout from "./CommonLayout";
   export default {
     name: "Home",
-      components: {CommonLayout},
+    data () {
+      return {
+        name: "nihao",
+      }
+    },
+    methods: {
+    },
+    components: {CommonLayout},
   }
 </script>

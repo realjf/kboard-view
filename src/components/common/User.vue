@@ -2,7 +2,7 @@
     <div class="user-info">
         <Dropdown>
             <a href="javascript:void(0)" :style="{ color: '#fff'}">
-                hello，欢迎您！
+              hello <span>{{username}}</span>，欢迎您！
                 <Icon type="ios-arrow-down"></Icon>
             </a>
             <DropdownMenu slot="list">
@@ -15,7 +15,24 @@
 
 <script>
     export default {
-        name: "User"
+        name: "User",
+        data () {
+          return {
+            username: this.$store.state.username,
+          }
+        },
+      methods: {
+        initName: function () {
+          let name = "";
+          this.$api.api_user.user().then(resp =>{
+            console.log(resp.result.name);
+            name = resp.result.name;
+          }).catch(()=>{
+            console.log()
+          });
+          return name;
+        }
+      }
     }
 </script>
 
