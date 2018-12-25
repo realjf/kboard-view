@@ -12,6 +12,12 @@ import StorageObject from "../views/storage/StorageObject";
 import StorageFile from "../views/storage/StorageFile";
 import NetIngress from "../views/net/NetIngress";
 import Setting from "../views/Setting";
+import MyOrder from "../views/order/MyOrder";
+import ServiceList from "../views/workload/ServiceList";
+import AppList from "../views/workload/AppList";
+import SecretList from "../views/config/SecretList";
+import ConfigmapList from "../views/config/ConfigmapList";
+import RoleList from "../views/user/RoleList";
 
 
 Vue.use(Router);
@@ -34,6 +40,10 @@ export default new Router({
           path: '/team/index',
           name: 'TeamList',
           component: TeamList,
+      },{
+          path: '/role/index',
+          name: 'RoleList',
+          component: RoleList,
       },{
           path: '/storage/mysql',
           name: 'StorageMysql',
@@ -58,6 +68,26 @@ export default new Router({
           path: '/net/ingress',
           name: 'NetIngress',
           component: NetIngress,
+      },{
+          path: '/configmap/list',
+          name: 'ConfigmapList',
+          component: ConfigmapList,
+      },{
+          path: '/secret/list',
+          name: 'SecretList',
+          component: SecretList,
+      },{
+          path: '/app/list',
+          name: 'AppList',
+          component: AppList,
+      },{
+          path: '/service/list',
+          name: 'ServiceList',
+          component: ServiceList,
+      },{
+          path: '/order',
+          name: 'MyOrder',
+          component: MyOrder,
       },{
           path: '/setting',
           name: 'Setting',

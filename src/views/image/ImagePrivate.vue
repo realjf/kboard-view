@@ -7,7 +7,7 @@
 <script>
     import CommonLayout from "../../components/CommonLayout";
     export default {
-        name: "StorageMysql",
+        name: "ImagePrivate",
         components: {CommonLayout}
     }
 </script>

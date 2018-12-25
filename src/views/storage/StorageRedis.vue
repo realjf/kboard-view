@@ -1,10 +1,14 @@
 <template>
-    
+    <CommonLayout>
+
+    </CommonLayout>
 </template>
 
 <script>
+    import CommonLayout from "../../components/CommonLayout";
     export default {
-        name: "StorageRedis"
+        name: "StorageRedis",
+        components: {CommonLayout}
     }
 </script>
 

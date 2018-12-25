@@ -8,18 +8,18 @@
                             <Icon type="ios-pulse" size="20" />
                             工作负载
                         </template>
-                        <MenuItem name="1-1">应用</MenuItem>
-                        <MenuItem name="1-2">服务</MenuItem>
-                        <MenuItem name="1-3">共享</MenuItem>
+                        <MenuItem name="1-1" to="/app/list">应用</MenuItem>
+                        <MenuItem name="1-2" to="/service/list">服务</MenuItem>
+                        <MenuItem name="1-3" to="/share/list">共享</MenuItem>
                     </Submenu>
                     <Submenu name="2">
                         <template slot="title">
                             <Icon type="ios-filing" size="20" />
                             存储与配置
                         </template>
-                        <MenuItem name="2-1">持久存储卷</MenuItem>
-                        <MenuItem name="2-2">密钥</MenuItem>
-                        <MenuItem name="2-3">应用配置</MenuItem>
+                        <MenuItem name="2-1" to="/">持久存储卷</MenuItem>
+                        <MenuItem name="2-2" to="/secret/list">密钥</MenuItem>
+                        <MenuItem name="2-3" to="/configmap/list">应用配置</MenuItem>
                     </Submenu>
                 </Menu>
             </TabPane>

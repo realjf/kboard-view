@@ -1,13 +1,15 @@
 <template>
     <CommonLayout>
-
+        <span slot="content">
+            这是工单列表
+        </span>
     </CommonLayout>
 </template>
 
 <script>
     import CommonLayout from "../../components/CommonLayout";
     export default {
-        name: "StorageMysql",
+        name: "MyOrder",
         components: {CommonLayout}
     }
 </script>
