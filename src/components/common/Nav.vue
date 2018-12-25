@@ -4,9 +4,8 @@
             <Icon type="ios-cloud" size="30"></Icon>
             <span>Kubernetes Dashboard V1</span>
         </div>
-        <MenuItem name="0">
-            <Icon type="ios-home" size="20"/>
-            <RouterLink to="/" :style="{ color: '#fff' }">首页</RouterLink>
+        <MenuItem name="0" to="/">
+            <Icon type="ios-home" size="20"/>首页
         </MenuItem>
         <Submenu name="2">
             <template slot="title">
