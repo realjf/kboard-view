@@ -1,14 +1,20 @@
 <template>
     <Breadcrumb>
         <BreadcrumbItem to="/"> Home </BreadcrumbItem>
-        <BreadcrumbItem to="/components/breadcrumb"> Components </BreadcrumbItem>
-        <BreadcrumbItem> Breadcrumb </BreadcrumbItem>
+        <BreadcrumbItem :to="moduleUrl"> <slot name="module"></slot> </BreadcrumbItem>
+        <BreadcrumbItem :to="actionUrl"> <slot name="action"></slot> </BreadcrumbItem>
     </Breadcrumb>
 </template>
 
 <script>
     export default {
-        name: "Crumb"
+        name: "Crumb",
+        data () {
+            return {
+                moduleUrl: "/login",
+                actionUrl: "",
+            }
+        }
     }
 </script>
 

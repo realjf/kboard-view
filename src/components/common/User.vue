@@ -6,8 +6,12 @@
                 <Icon type="ios-arrow-down"></Icon>
             </a>
             <DropdownMenu slot="list">
-                <DropdownItem>设置</DropdownItem>
-                <DropdownItem><routerLink to="/logout">退出</routerLink></DropdownItem>
+                <DropdownItem>
+                    <RouterLink to="/setting">设置</RouterLink>
+                </DropdownItem>
+                <DropdownItem>
+                    <RouterLink to="/logout">退出</RouterLink>
+                </DropdownItem>
             </DropdownMenu>
         </Dropdown>
     </div>
@@ -31,5 +35,6 @@
     div.user-info{
         display: inline-block;
         float: right;
+        margin-left: 20px;
     }
 </style>
