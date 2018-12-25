@@ -12,7 +12,8 @@
     import Pager from "../../components/common/Pager";
     export default {
         name: "AppList",
-        components: {Pager, SortTable, CommonLayout}
+        components: {Pager, SortTable, CommonLayout},
+
     }
 </script>
 

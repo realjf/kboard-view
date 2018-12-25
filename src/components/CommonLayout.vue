@@ -36,7 +36,7 @@
                 <Sider></Sider>
                 <Layout :style="{padding: '0 24px 24px'}">
                     <Crumb></Crumb>
-                    <Content :style="{padding: '24px', background: '#fff'}">
+                    <Content :style="{padding: '24px', minHeight: '760px', background: '#fff'}">
                         <slot name="content">
                             这是框架正文
                         </slot>

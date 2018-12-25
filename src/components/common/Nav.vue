@@ -44,7 +44,7 @@
                 <Icon type="ios-globe-outline" size="20"/>
                 网络
             </template>
-            <MenuItem name="5-1" to="/net/">边缘路由</MenuItem>
+            <MenuItem name="5-1" to="/net/edge">边缘路由</MenuItem>
             <MenuItem name="5-2" to="/net/ingress">ingress控制器</MenuItem>
         </Submenu>
         <Submenu name="6">

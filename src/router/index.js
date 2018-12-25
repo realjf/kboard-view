@@ -21,6 +21,7 @@ import RoleList from "../views/user/RoleList";
 import ImagePublic from "../views/image/ImagePublic";
 import ImagePrivate from "../views/image/ImagePrivate";
 import ImageTeam from "../views/image/ImageTeam";
+import NetEdgeRouter from "../views/net/NetEdgeRouter";
 
 
 Vue.use(Router);
@@ -71,6 +72,10 @@ export default new Router({
           path: '/net/ingress',
           name: 'NetIngress',
           component: NetIngress,
+      },{
+          path: '/net/edge',
+          name: 'NetEdgeRouter',
+          component: NetEdgeRouter,
       },{
           path: '/configmap/list',
           name: 'ConfigmapList',
