@@ -13,11 +13,14 @@ import StorageFile from "../views/storage/StorageFile";
 import NetIngress from "../views/net/NetIngress";
 import Setting from "../views/Setting";
 import MyOrder from "../views/order/MyOrder";
-import ServiceList from "../views/workload/ServiceList";
-import AppList from "../views/workload/AppList";
+import ServiceList from "../views/service/ServiceList";
+import AppList from "../views/app/AppList";
 import SecretList from "../views/config/SecretList";
 import ConfigmapList from "../views/config/ConfigmapList";
 import RoleList from "../views/user/RoleList";
+import ImagePublic from "../views/image/ImagePublic";
+import ImagePrivate from "../views/image/ImagePrivate";
+import ImageTeam from "../views/image/ImageTeam";
 
 
 Vue.use(Router);
@@ -84,6 +87,18 @@ export default new Router({
           path: '/service/list',
           name: 'ServiceList',
           component: ServiceList,
+      },{
+          path: '/image/public',
+          name: 'ImagePublic',
+          component: ImagePublic,
+      },{
+          path: '/image/team',
+          name: 'ImageTeam',
+          component: ImageTeam,
+      },{
+          path: '/image/private',
+          name: 'ImagePrivate',
+          component: ImagePrivate,
       },{
           path: '/order',
           name: 'MyOrder',

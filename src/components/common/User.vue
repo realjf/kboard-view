@@ -6,12 +6,8 @@
                 <Icon type="ios-arrow-down"></Icon>
             </a>
             <DropdownMenu slot="list">
-                <DropdownItem>
-                    <RouterLink to="/setting">设置</RouterLink>
-                </DropdownItem>
-                <DropdownItem>
-                    <RouterLink to="/logout">退出</RouterLink>
-                </DropdownItem>
+                <DropdownItem to="/setting">设置</DropdownItem>
+                <DropdownItem to="/logout">退出</DropdownItem>
             </DropdownMenu>
         </Dropdown>
     </div>
