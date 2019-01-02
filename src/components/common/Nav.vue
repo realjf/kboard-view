@@ -1,5 +1,5 @@
 <template>
-    <Menu mode="horizontal" :theme="theme1" active-name="1">
+    <Menu mode="horizontal" :theme="theme1" active-name="1" :style="{minWidth: '200px'}">
         <div :style="{ color: '#fff', display: 'inline-block', float: 'left', margin: '0', width: '240px'}">
             <Icon type="ios-cloud" size="30"></Icon>
             <span>Kubernetes Dashboard V1</span>
@@ -97,6 +97,9 @@
 </script>
 
 <style scoped>
+  a.ivu-menu-item.ivu-menu-item-active {
+
+  }
     a.ivu-menu-item.ivu-menu-item-active.ivu-menu-item-selected {
         color: #fff;
     }

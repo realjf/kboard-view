@@ -22,7 +22,7 @@
     methods: {
       initName: function() {
         let name = "";
-        Vue.$api.api_user.user().then(resp =>{
+        this.$api.api_user.user().then(resp =>{
           console.log(resp.result.name);
           name = resp.result.name;
         }).catch(()=>{
