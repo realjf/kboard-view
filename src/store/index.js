@@ -7,9 +7,7 @@ Vue.use(Vuex)
 
 const debug = process.env.NODE_ENV !== 'production'
 
-const state = {
-  username: 'ffff',
-}
+const state = {}
 const getters = {}
 const mutataions = {}
 const actions = {}

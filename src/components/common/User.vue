@@ -22,12 +22,24 @@
         name: "User",
         data () {
           return {
-            username: this.$store.state.username,
+            username: "",
           }
         },
-      methods: {
+        methods: {
 
-      }
+        },
+        mounted () {
+            let params = {};
+            this.$api.api_user.list(params).then(
+                res => {
+                    if(res.code == 100){
+                        this.username = res.result.name
+                    }
+                    console.log(res);
+                }).catch(error => {
+                    console.log(error)
+            })
+        }
     }
 </script>
 

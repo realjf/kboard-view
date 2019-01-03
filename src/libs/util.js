@@ -1,28 +1,27 @@
 
 import axios from 'axios';
 import qs from 'qs';
+import store from '../store/index';
 
 const Util = {
-    imgPath: 'http://127.0.0.1:8011/img/',
-    apiPath: 'http://127.0.0.1:8005/api/'
+    apiPath: 'http://dev.docker:8005/api/'
 };
 
 // ajax通用配置
 Util.ajax = axios.create({
     baseURL: Util.apiPath,
-    timeout: 10000,
+    timeout: 10000,// 请求超时的时间限制
     transformRequest: data => qs.stringify(data) // 将application/json转换为application/x-www-form-urlencoded
 });
 
-// 请求超时的时间限制
-axios.defaults.timeout = 20000
 // 开始设置请求 发起的拦截处理
 // config 代表发起请求的参数的实体
-
 // request拦截器
 Util.ajax.interceptors.request.use(
   config => {
-    // 得到参数中的 requestName 字段，用于决定下次发起请求，取消对应的 相同字段的请求
+      const token = store.state.token;
+      token && (config.headers.Authorization = token);
+      // 得到参数中的 requestName 字段，用于决定下次发起请求，取消对应的 相同字段的请求
     // 如果没有 requestName 就默认添加一个 不同的时间戳
     let requestName
     if(config.method === 'post'){

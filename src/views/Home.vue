@@ -16,13 +16,13 @@
   export default {
     name: "Home",
     data () {
-      return {
+          return {
       }
     },
     methods: {
       initName: function() {
         let name = "";
-        this.$api.api_user.user().then(resp =>{
+        this.$api.api_user.list().then(resp =>{
           console.log(resp.result.name);
           name = resp.result.name;
         }).catch(()=>{

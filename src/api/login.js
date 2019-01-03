@@ -1,9 +1,9 @@
-import request from '@/libs/util'
+import request from '@/libs/http/index'
 
 export function login(data) {
-  return request({
-    url: '/user/index',
-    method: 'post',
-    data: data,
-  })
+    return request({
+        url: '/login/index',
+        method: 'post',
+        data: data,
+    })
 }
