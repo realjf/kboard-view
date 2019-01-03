@@ -1,5 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import user from './modules/user'
+
 // 修改state时在console打印，便于调试
 import createLogger from 'vuex/dist/logger'
 
@@ -15,7 +17,7 @@ const actions = {}
 
 export default new Vuex.Store({
     modules: {
-
+      user
     },
     state,
     getters,
