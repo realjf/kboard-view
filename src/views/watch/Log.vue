@@ -1,9 +1,15 @@
 <template>
-    <Table stripe :columns="columns1" :data="data1"></Table>
+    <CommonLayout>
+        <span slot="content">
+             <Table stripe :columns="columns1" :data="data1"></Table>
+        </span>
+    </CommonLayout>
 </template>
 <script>
+    import CommonLayout from "../../components/CommonLayout";
     export default {
         name: "Log",
+        components: {CommonLayout},
         data () {
             return {
                 columns1: [
