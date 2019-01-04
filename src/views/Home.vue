@@ -6,6 +6,7 @@
   <CommonLayout>
     <span slot="content">
       这是首页
+      <Price></Price>
     </span>
   </CommonLayout>
 </template>
@@ -13,24 +14,17 @@
 <script>
 
   import CommonLayout from "../components/CommonLayout";
+  import Price from "../components/common/Price";
   export default {
     name: "Home",
-    data () {
+      data () {
           return {
-      }
-    },
-    methods: {
-      initName: function() {
-        let name = "";
-        this.$api.api_user.list().then(resp =>{
-          console.log(resp.result.name);
-          name = resp.result.name;
-        }).catch(()=>{
-          console.log()
-        });
-        return name;
-      }
-    },
-    components: {CommonLayout},
+              pageTitle: "首页"
+          }
+      },
+      mounted() {
+        this.$parent.$el['pageTitle'] = "首页";
+      },
+    components: {Price, CommonLayout},
   }
 </script>
